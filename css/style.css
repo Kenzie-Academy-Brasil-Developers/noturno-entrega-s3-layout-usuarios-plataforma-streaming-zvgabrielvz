@@ -51,6 +51,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 
 	#bloco{
+		box-sizing: border-box;
 		width: 380px;
 		margin-left: auto;
 		margin-right: auto;
@@ -60,7 +61,6 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: flex-end;
 	}
 
 	li{
@@ -70,6 +70,12 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	img{
 		width: 160px;
 	}
+
+	#bloco img:hover{
+		border: solid 2.5px #FFFFFF;
+	}
+
+
 
 	ul h3{
 		margin-top: 1rem;
@@ -84,5 +90,59 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		border: solid 2px #FFFFFF;
 		padding: 1em;
 	}
+
+	#button:hover{
+		color:#00002E;
+		background-color: #FFFFFF;
+	}
+
+
+
+	@media (min-width: 890px) {
+		body{
+			background-color: #00002E;
+		}
+
+		#bloco{
+			width: 858px;	
+		
+		}
+
+		#bloco ul{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		img{
+			width: 170px;
+		}
+		
+		header h2{
+			font-size: 60px;
+			margin-bottom: 5rem;
+		}
+
+		
+	#button{
+		font-size: 25px;
+		color: #FFFFFF;;
+		background-color: #00002E;
+		border: solid 2px #FFFFFF;
+		padding: 1rem;
+	}
+
+	.topo{
+		text-align: left;
+	}
+
+	.topo img{
+		width: 250px;
+	}
+	
+	  }
+
+	
 
 	
